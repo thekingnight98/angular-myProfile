@@ -1,0 +1,15 @@
+<div>
+    <div>
+        <mat-card>
+            <mat-card-content>
+                <div *ngFor="let item of dataSkill">
+                    <h1>{{ item.name }}</h1>
+                    <section class="example-section">
+                        <mat-progress-bar class="example-margin" [color]="color" [mode]="mode" [value]="item.value" [bufferValue]="bufferValue">
+                        </mat-progress-bar>
+                    </section>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

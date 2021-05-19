@@ -1,0 +1,10 @@
+<div>
+    <h1>User from api</h1>
+    <div *ngFor="let user of Users">
+        <div class="card-info">
+            <div>id : {{ user.id }}</div>
+            <div>{{ user.name }}</div>
+            <div>Email :{{ user.email }}</div>
+        </div>
+    </div>
+</div>
