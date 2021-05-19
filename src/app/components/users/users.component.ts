@@ -12,8 +12,11 @@ export class UsersComponent implements OnInit {
 
   ngOnInit() {
     this.userService.GetUsers().subscribe((res) => {
-      console.log(res);
+      console.log('res = ', res);
       this.Users = res;
+      localStorage.setItem('dataSource', JSON.stringify(this.Users));
+
+      console.log('get localStorage', localStorage.getItem('dataSource'));
     });
   }
 }
